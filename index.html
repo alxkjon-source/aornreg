@@ -508,7 +508,7 @@
     const amount = getSelectedAmount();
 
     if (!amount){ showStatus('err', 'Please enter an amount.'); return; }
-    if (APPSCRIPT_URL === 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE'){
+    if (APPSCRIPT_URL === 'https://script.google.com/macros/s/AKfycbw9t1n8K0StRv6J3tk2dnW85g1L4GAcbfwZxA5MLDWIOYx5mSbwfJkKTu1qmuPxhiSHgg/exec'){
       showStatus('err', 'Backend not connected yet — paste your Apps Script Web App URL into APPSCRIPT_URL in the code.');
       return;
     }
@@ -575,7 +575,7 @@
   async function loadRegistrations(){
     adminCount.textContent = 'Loading registrations…';
     adminTbody.innerHTML = '';
-    if (APPSCRIPT_URL === 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE'){
+    if (APPSCRIPT_URL === 'https://script.google.com/macros/s/AKfycbw9t1n8K0StRv6J3tk2dnW85g1L4GAcbfwZxA5MLDWIOYx5mSbwfJkKTu1qmuPxhiSHgg/exec'){
       adminCount.textContent = 'Backend not connected yet — paste your Apps Script Web App URL into APPSCRIPT_URL.';
       return;
     }
